@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CarOrders.Models.Models
 {
-    class RouteType : BaseDictionary
+    public class RouteType : BaseDictionary
     {
         public ICollection<Order> Orders { get; set; }
         public RouteType()

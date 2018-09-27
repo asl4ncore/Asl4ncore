@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace CarOrders.Models.Models
 {
-    public class Determine : BaseDictionary
+    public class Provider : BaseDictionary
     {
-        public ICollection<Order> Orders { get; set; }
+        public string ProviderCountry { get; set; }
+        public ICollection<Material> Materials { get; }
 
-        public Determine()
+        public Provider()
         {
-            Orders = new List<Order>();
+            Materials = new List<Material>();
         }
     }
 }
